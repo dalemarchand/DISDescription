@@ -35,6 +35,9 @@
 <cpp namespace="DIS"
      directory="cpp/DIS"/>
 
+<qtCpp namespace="DIS6"
+     directory="qtcpp/DIS6"/>
+
 <objc directory="Objc"/>
 
 <javascript namespace="dis" directory="javascript"/>
@@ -442,7 +445,7 @@ Also provides basic parametric data that may be used to support low-fidelity sim
     
     <attribute name="variableData" comment="data can be any length, but must increase in 8 byte quanta. This requires some postprocessing patches. Note that setting the data allocates a new internal array to account for the possibly increased size. The default initial size is 64 bits.">
      <variablelist  countFieldName="variableDatumLength">
-       <classRef name="OneByteChunk"/>
+       <classRef name="EightByteChunk"/>
     </variablelist> 
     </attribute>
      
